@@ -396,7 +396,7 @@ a:focus, a:hover {
 }
 
 .single-page-header {
-  background-image: url("../images/header.webp");
+  background-image: url("../images/header.png");
   background-size: cover;
   padding: 140px 0 70px;
   text-align: center;
@@ -422,7 +422,7 @@ a:focus, a:hover {
 }
 
 .navigation .logo-default {
-  width: 40px;
+  width: 50px;
 }
 
 .navigation .navbar-light .navbar-nav .nav-item .nav-link {
@@ -563,7 +563,7 @@ a:focus, a:hover {
 }
 
 .hero-area {
-  background-image: url("../images/slider/slider-bg-1.jpg");
+  /* background-image: url("../images/slider/slider-bg-1.jpg"); */
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -574,7 +574,7 @@ a:focus, a:hover {
 
 .hero-area:before {
   content: '';
-  background: rgba(0, 0, 0, 0.63);
+  /* background: rgba(0, 0, 0, 0.63); */
   position: absolute;
   top: 0;
   right: 0;
@@ -648,7 +648,7 @@ a:focus, a:hover {
 
 .slider-item {
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -658,7 +658,7 @@ a:focus, a:hover {
   content: "";
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   left: 0;
   top: 0;
 }
@@ -1145,16 +1145,19 @@ a:focus, a:hover {
 }
 
 /*=================================================================
-  Portfolio section
+  Gallery section
 ==================================================================*/
 
 
-.portfolio-block {
-  /* position: relative; */
+/* .portfolio-block {
   margin-bottom: 30px;
 }
+.portfolio-block img {
+  height: 100%;
+  width: 100%;
+}
 
-/* .portfolio-block:before {
+.portfolio-block:before {
   transition: all 0.3s ease-in-out;
   background: rgba(0, 0, 0, 0.55);
   opacity: 0;
@@ -1207,6 +1210,64 @@ a:focus, a:hover {
   font-size: 25px;
   border-radius: 30px;
 } */
+
+.portfolio-block {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.portfolio-block img {
+  height: 100%;
+  width: 100%;
+  z-index: 9;
+}
+
+.portfolio-block:before {
+  transition: all 0.3s ease-in-out;
+  /* background: rgba(0, 0, 0, 0.55); */
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  content: '';
+}
+
+.portfolio-block:hover:before {
+  opacity: 1;
+}
+
+.portfolio-block:hover .caption a p {
+  top: 45%;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.portfolio-block:hover .caption {
+  opacity: 1;
+  top: 55%;
+}
+
+.portfolio-block .caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 9;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.portfolio-block .caption .search-icon {
+  color: #fff;
+  display: inline-block;
+  padding: 4px 13px;
+  font-size: 25px;
+  background: rgba(0, 0, 0, 0.6);
+}
 
 /*=================================================================
   Services section
@@ -2475,9 +2536,21 @@ hr{
   justify-content: center;
   align-items: center;
 }
-.research-content section:nth-of-type(even){
+.research-content section:nth-of-type(odd){
   background-color: #f7f7f7;
 }
 .proj-detail{
   color: #313433;
+}
+.vertical-center{
+  display: grid;
+}
+.vertical-center img{
+  align-self: center;
+}
+.member-photo img {
+  width: 100%;
+}
+.Professor-details ul li{
+  list-style:disc;
 }
