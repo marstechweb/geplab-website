@@ -64,12 +64,12 @@
 	<!--
 Fixed Navigation
 ==================================== -->
-	<header class="navigation fixed-top">
+	<header class="navigation fixed-top sticky-header" data-aos="fade-down">
 		<div class="container-fluid">
 			<!-- main nav -->
-			<nav class="navbar navbar-expand-lg navbar-light" data-aos="fade-down">
+			<nav class="navbar navbar-expand-lg navbar-light px-0" >
 				<!-- logo -->
-				<a class="navbar-brand logo" href="index.html">
+				<a class="navbar-brand logo px-0 py-0 mt-0 mr-0" href="index.html">
 					<img class="logo-default" src="images/logo.png" alt="logo" />
 				</a>
 				<!-- /logo -->
@@ -99,7 +99,7 @@ Fixed Navigation
 							<a class="nav-link" href="facilities.html">Facilities</a>
 						</li>
 						<li class="nav-item ">
-							<a class="nav-link" href="gallery.html">Gallery</a>
+							<a class="nav-link" href="news&events.html">News & Events</a>
 						</li>
 						<!-- <li class="nav-item ">
 							<a class="nav-link" href="news.html">News Recognition</a>
@@ -128,18 +128,18 @@ End Fixed Navigation
 	<!-- Professor Div -->
 	<section class="container overflow-hidden py-5" id="about" data-aos="zoom-in">
 		<div class="prof-dv row">
-			<div class="col-md-12 col-lg-6 vertical-center">
-				<figure class="professor-img pb-4">
-					<img src="images/company/gallery-2.jpg" class="img-fluid" alt="">
+			<div class="col-md-12 col-lg-4 vertical-center">
+				<figure class="professor-img text-center pb-4">
+					<img src="./images/phd/professor_img.png" class="img-fluid" alt="">
 				</figure>
 			</div>
-			<div class="col-md-12 col-lg-6">
+			<div class="col-md-12 col-lg-8">
 				<p>
 					Ir. Dr. Shao-Yuan (Ben) Leu is currently an Associate Professor in the Civil and Environmental Engineering (CEE) at the Hong Kong Polytechnic University. He obtained his BS/MS degrees on Wood Processing Techniques from the National Taiwan University (1993-97) and PhD from the Civil and Environmental Engineering Department of University of California, Los Angeles, UCLA (2003-09). He was a lecturer at UC Riverside (2010-11) and a postdoctoral fellow at USDA Forest Products Laboratory in Madison, Wisconsin (2011-13). Dr. Leu’s research interests are in biorefinery and biological systems for wastes and wastewater treatment and its valorization for new generation bioenergy and chemicals. He and other Professors in the Research Institute of Sustainable Development (RISUD) established the BioEnergy Lab, which aims to characterize the physiochemical properties of plant cell wall and forge biomass conversion theories into practices. From pretreatment, saccharification, fermentation, to lignin depolymerization, Dr. Leu’s team has developed a few techniques to convert plant biomass derived from woods, herbs, and even food wastes into useful products, such as bioethanol, 2,3-butandiols, and monolignols. The related studies may be particularly applicable for forestry and waste management in mega-cities like Hong Kong.
 				</p>
+				<p class="text-right">- Shao-Yuan (Ben) Leu, Ph.D., P.E (California)</p>
 			</div>
 		</div>
-		<p class="text-right">- Shao-Yuan (Ben) Leu, Ph.D., P.E (California)</p>
 	</section>
 	<!-- Professor Div end -->
 
@@ -184,7 +184,7 @@ End Fixed Navigation
 		</div>
 	</section>
 
-	<section class="cover-arts bg-gray py-5" id="blog">
+	<section class="cover-arts py-5" id="blog">
 		<div class="container">
 			<div class="row">
 
@@ -192,7 +192,6 @@ End Fixed Navigation
 				<div class="col-12">
 					<div class="title text-center ">
 						<h2> Cover Arts </h2>
-						<div class="border"></div>
 					</div>
 				</div>
 				<!-- /section title -->
@@ -269,35 +268,13 @@ End Fixed Navigation
 		</div> <!-- end container -->
 	</section> <!-- end section -->
 
-	<section class="collaborators container py-5">
-		<h2 class="text-center">Collaborators</h2>
-		<div class="row">
-			<div class="col-md-12">
-				<div id="clients-slider" class="clients-logo-slider mt-0">
-					<img src="images/client-logo/logo1.png" alt="">
-					<img src="images/client-logo/logo-2.png" alt="">
-					<img src="images/client-logo/logo-3.png" alt="">
-					<img src="images/client-logo/logo-4.png" alt="">
-					<img src="images/client-logo/logo-5.png" alt="">
-					<img src="images/client-logo/logo1.png" alt="">
-					<img src="images/client-logo/logo-2.png" alt="">
-					<img src="images/client-logo/logo-3.png" alt="">
-					<img src="images/client-logo/logo-4.png" alt="">
-					<img src="images/client-logo/logo-5.png" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<section class="team py-5" id="team">
+	<section class="team py-5 bg-gray" id="team">
 		<div class="container">
 			<div class="row">
 
 				<div class="col-12">
 					<div class="title text-center ">
 						<h2>News Recognition</h2>
-						<div class="border"></div>
 					</div>
 				</div>
 
@@ -347,101 +324,36 @@ End Fixed Navigation
 			</div>
 	</section>
 
-
-
-	<section class="company-mission overflow-hidden py-5 bg-gray">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8" data-aos="fade-right">
-					<h3>Open Positions</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere in suscipit voluptatum totam
-						dolores assumenda vel, quia earum voluptatem blanditiis vero accusantium saepe aliquid nulla
-						nemo accusamus, culpa inventore! Culpa nemo aspernatur tenetur, at quam aliquid reprehenderit
-						obcaecati dicta illum mollitia, perferendis hic, beatae voluptates? Ex labore, obcaecati harum
-						nam.</p>
-				</div>
-
-				<div class="col-md-4 recent-news" data-aos="fade-left">
-					<h3>Recent News</h3>
-					<marquee width="100%" direction="up" height="200px">
-						<ul class="news">
-							<li>
-								<a href="#">This Is a Link</a>
-							</li>
-							<li>
-								<a href="#">This Is a Link</a>
-							</li>
-							<li>
-								<a href="#">This Is a Link</a>
-							</li>
-							<li>
-								<a href="#">This Is a Link</a>
-							</li>
-							<li>
-								<a href="#">This Is a Link</a>
-							</li>
-							<li>
-								<a href="#">This Is a Link</a>
-							</li>
-							<li>
-								<a href="#">This Is a Link</a>
-							</li>
-							<li>
-								<a href="#">This Is a Link</a>
-							</li>
-							<li>
-								<a href="#">This Is a Link</a>
-							</li>
-						</ul>
-					</marquee>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
 	<footer id="footer" class="bg-one">
 		<div class="top-footer">
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-3 col-md-3 col-lg-3">
+				<div class="row justify-content-center">
+					<div class="col-sm-12 col-md-6 col-lg-4">
 						<h3>about</h3>
-						<p>Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus
-							cursus commodo, tortor mauris sed posuere.</p>
+						<p>
+							Our research interests are in biorefinery and biological systems for wastes and wastewater treatment and production of new generation energy and chemicals.We are also efficiently working on functionalization and utilization of the key building-block chemicals from lignocellulosic biomass, underscoring the utility of both classical and newly developed methods in lignocellulosic biorefinery.
+						</p>
 					</div>
 
-					<div class="col-sm-3 col-md-3 col-lg-3">
-						<ul>
-							<li>
-								<h3>Our Services</h3>
-							</li>
-							<li><a href="#">Graphic Design</a></li>
-							<li><a href="#">Web Design</a></li>
-							<li><a href="#">Web Development</a></li>
-						</ul>
+					<div class="col-sm-12 col-md-6 col-lg-4">
+							<h3>Address</h3>
+							<p>
+								ZS1101, ZS1102, ZS1112 and ZS1114, Block Z, Department of Civil and Environmental Engineering, The Hong Kong Polytechnic University.
+								<ul>
+									<li><a href="tel:(852) 2766 6077">(852) 2766 6077</a></li>
+								</ul>
+							</p>
 					</div>
 
-					<div class="col-sm-3 col-md-3 col-lg-3">
-						<ul>
-							<li>
-								<h3>Quick Links</h3>
-							</li>
-							<li><a href="#">Partners</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">FAQ’s</a></li>
-							<li><a href="#">Badges</a></li>
-						</ul>
-					</div>
-
-					<div class="col-sm-3 col-md-3 col-lg-3">
+					<div class="col-sm-12 col-md-12 col-lg-4">
 						<ul>
 							<li>
 								<h3>Connect with us Socially</h3>
 							</li>
-							<li><a href="#">Facebook</a></li>
-							<li><a href="#">Twitter</a></li>
-							<li><a href="#">Youtube</a></li>
-							<li><a href="#">Pinterest</a></li>
+							<li><a href="https://www.youtube.com/watch?v=A13ETrq0B-o">Youtube</a></li>
+							<li><a href="https://www.facebook.com/cee.polyu/">Facebook</a></li>
+							<li><a href="https://www.instagram.com/cee.polyu/?hl=en">Instagram</a></li>
+							<li><a href="https://www.linkedin.com/in/syleu/">Linkedin</a></li>
 						</ul>
 					</div>
 
@@ -450,7 +362,7 @@ End Fixed Navigation
 			</div>
 			<div class="footer-bottom">
 				<h5>Copyright 2016. All rights reserved.</h5>
-				<h6>Design and Developed by <a href="">Marstech</a></h6>
+				<h6>Design and Developed by <a href="https://www.marstech.co.in/">Marstech</a></h6>
 			</div>
 	</footer>
 
