@@ -59,7 +59,8 @@ a:focus, a:hover {
   display: inline-block;
   font-size: 14px;
   letter-spacing: 1px;
-  padding: 12px 40px;
+  padding: 10px 20px;
+  margin-left: 5px;
   text-transform: uppercase;
   border-radius: 40px;
 }
@@ -964,7 +965,7 @@ a:focus, a:hover {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  border: 1px solid #dedede;
+  border: 1px solid #148864;
   text-align: center;
 }
 
@@ -979,7 +980,7 @@ a:focus, a:hover {
 }
 
 .social-icon ul li a i {
-  color: #55606a;
+  color: #148864;
   display: inline-block;
   font-size: 20px;
   line-height: 50px;
@@ -2028,9 +2029,9 @@ a:focus, a:hover {
   Footer section
 ==================================================================*/
 .top-footer {
-  background-color: #222222;
+  background-color: #313433;
   border-top: 1px solid #404040;
-  padding: 100px 0 80px;
+  padding-top: 30px;
 }
 
 .top-footer h3 {
@@ -2070,7 +2071,7 @@ a:focus, a:hover {
 
 .footer-bottom {
   text-align: center;
-  background-color: #1b1b1b;
+  background-color: #1A1A1A;
   border-top: 1px solid #2c2c2c;
   padding: 30px 0;
 }
@@ -2516,7 +2517,7 @@ hr{
   color: #148864;
 }
 .media-wrapper{
-  padding: 10px;
+  padding: 15px;
 }
 .text-start{
   text-align: left;
@@ -2554,4 +2555,10 @@ hr{
 }
 .style-none{
   list-style: none;
+}
+.yt-video figure{
+  height: 200px;
+}
+.media-wrapper img{
+  width: 100%;
 }
