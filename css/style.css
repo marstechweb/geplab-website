@@ -10,11 +10,13 @@ p {
   font-family: "Source Sans Pro", sans-serif;
   color: #757575;
   font-size: 16px;
+  text-align: justify;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Trirong', serif;
   font-weight: 600;
+  /* text-align: justify; */
 }
 
 .no-padding {
@@ -2557,8 +2559,14 @@ hr{
   list-style: none;
 }
 .yt-video figure{
-  height: 200px;
+  height: 500px;
 }
 .media-wrapper img{
   width: 100%;
+}
+.cover-item{
+  height: 100%;
+}
+.biosketch-list li, .research-grants ol li, .book-chapters ol li, .book-chapters ol , .patents ol li {
+  text-align: justify;
 }
