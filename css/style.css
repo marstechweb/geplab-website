@@ -2567,6 +2567,9 @@ hr{
 .cover-item{
   height: 100%;
 }
-.biosketch-list li, .research-grants ol li, .book-chapters ol li, .book-chapters ol , .patents ol li {
+.biosketch-list li, .research-grants ol li, .book-chapters ol li, .book-chapters ol , .patents ol li, .alumni ul li {
   text-align: justify;
+}
+.alumni > ul > li{
+  list-style-type: disc;
 }
