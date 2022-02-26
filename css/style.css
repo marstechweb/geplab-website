@@ -396,7 +396,7 @@ a:focus, a:hover {
 .single-page-header {
   background-image: url("../images/header.png");
   background-size: cover;
-  padding: 140px 0 70px;
+  padding: 60px 0 0;
   text-align: center;
   color: #fff;
   position: relative;
@@ -558,11 +558,31 @@ a:focus, a:hover {
 }
 
 .hero-area {
-  /* background-image: url("../images/slider/slider-bg-1.jpg"); */
-  background-size: cover;
   height: 100vh;
   width: 100%;
-  position: relative;
+  /* position: relative; */
+  background: rgba(20, 136, 100, 0.4);
+}
+.hero-area img {
+  height: 84%;
+  width: 100vw;
+  margin-top: 8.5%;
+  z-index: -1;
+}
+.home-logo-img{
+  width: 26rem;
+  position: absolute;
+  top: 17%;
+  left: 34%;
+  height: 83%;
+  opacity: .3;
+}
+@media screen and (max-width: 992px){
+  .home-logo-img{
+    display: none;
+  }
+}
+.slick-initialized .slick-slide {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -570,7 +590,6 @@ a:focus, a:hover {
 
 .hero-area:before {
   content: '';
-  /* background: rgba(0, 0, 0, 0.63); */
   position: absolute;
   top: 0;
   right: 0;
@@ -1476,12 +1495,12 @@ a:focus, a:hover {
 .team .member-photo .mask {
   background: rgba(40, 171, 227, 0.7);
   position: absolute;
-  width: 80%;
+  width: 71%;
   bottom: 6%;
   top: auto;
   opacity: 0;
   filter: alpha(opacity=0);
-  left: 10%;
+  left: 14.5%;
   right: 0;
   cursor: pointer;
   padding: 0;
@@ -2449,14 +2468,14 @@ a:focus, a:hover {
 
 
 .professor-img, .professor-img img {
-  width: 80%;
   border-radius: .4rem;
 }
 .recent-news marquee ul{
   list-style-type: disc;
 }
-.prof-bio-img{
+.prof-bio-img, .research-images{
   border-radius: .4rem;
+  box-shadow: 1px 3px 5px rgb(26 26 26 / 25%);
 }
 .prof-summary{
   overflow-y: hidden;
@@ -2498,6 +2517,7 @@ hr{
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 80%;
 }
 
 .content-table thead tr {
@@ -2505,6 +2525,7 @@ hr{
   color: #fff;
   text-align: left;
   font-weight: bold;
+  font-family: 'Trirong', serif;
 }
 
 .content-table th,
@@ -2524,10 +2545,10 @@ hr{
   border-bottom: 2px solid #148864;
 }
 
-.content-table tbody tr.active-row {
+/* .content-table tbody tr.active-row {
   font-weight: bold;
   color: #148864;
-}
+} */
 .media-wrapper{
   padding: 15px;
 }
@@ -2555,7 +2576,7 @@ hr{
   align-self: center;
 }
 .member-photo img {
-  width: 73%;
+  width: 65%;
   height: 80%;
   border-radius: .4rem;
 }
@@ -2587,4 +2608,16 @@ hr{
 .search-icon > img {
   width: 100%;
   height: 300px;
+}
+.home-research-images{
+  transition: all 0.2s linear;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: .4rem;
+}
+.home-research-images:hover{
+  transform: scale(1.05);
+  box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
+  
 }
