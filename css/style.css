@@ -572,14 +572,19 @@ a:focus, a:hover {
 .home-logo-img{
   width: 26rem;
   position: absolute;
-  top: 17%;
+  top: 30%;
   left: 34%;
-  height: 83%;
+  height: 60%;
   opacity: .3;
 }
 @media screen and (max-width: 992px){
   .home-logo-img{
-    display: none;
+    width: 33%;
+    position: absolute;
+    top: 45%;
+    left: 33%;
+    height: 40%;
+    opacity: .3;
   }
 }
 .slick-initialized .slick-slide {
