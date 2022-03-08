@@ -606,7 +606,12 @@ a:hover {
 }
 /* @media screen and (max-width: 992px){
   .home-logo-img{
-    display: none;
+    width: 33%;
+    position: absolute;
+    top: 45%;
+    left: 33%;
+    height: 40%;
+    opacity: .3;
   }
 } */
 .slick-initialized .slick-slide {
